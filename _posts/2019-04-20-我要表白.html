@@ -1,116 +1,241 @@
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>表白</title>
-<!--引入开始-->
+<!doctype html><!--声明当前文档为html文档-->
+<html lang="en"><!--语言为英语-->
+  <head><!--头部-->
+    <metacharset="UTF-8"><!--字符编码：utf-8国际编码 gb2312中文编码-->
+    <metaname="Keywords"content="关键词">
+    <metaname="Description"content="描述">
+    <title>Document</title>
+    <style>/*css样式表的衣柜*/
+    *{margin:0px;padding:0px;}/*去除默认外边距、内边距*/
+      body{background:#000;}
+      .heart3d {
+       position: absolute;
+       top: 0;
+       right: 0;
+       bottom: 0;
+       left: 0;
+       margin: auto;
+       width: 100px;
+       height: 160px;
+       transform-origin:centercenter center;
+       transform-style: preserve-3d;
+       animation: spin 15s infinite linear;
+      }
+      #display{width:200px;color:white;font-size:24px;white-space:normal;text-indent:55px;position:absolute;left:100px;top:100px;}
+      .heart3d [class^="rib"] {
+       position: absolute;
+       width: 100px;
+       height: 160px;
+       border: solid #f22613;
+       border-width: 1px 1px 00;
+       border-radius: 50% 50% 0 /40% 50% 0;
+      }
+      .heart3d [class$="1"] {
+       transform: rotateY(10deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="2"] {
+       transform: rotateY(20deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="3"] {
+       transform: rotateY(30deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="4"] {
+       transform: rotateY(40deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="5"] {
+       transform: rotateY(50deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="6"] {
+       transform: rotateY(60deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="7"] {
+       transform: rotateY(70deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="8"] {
+       transform: rotateY(80deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="9"] {
+       transform: rotateY(90deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="10"] {
+       transform: rotateY(100deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="11"] {
+       transform: rotateY(110deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="12"] {
+       transform: rotateY(120deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="13"] {
+       transform: rotateY(130deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="14"] {
+       transform: rotateY(140deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="15"] {
+       transform: rotateY(150deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="16"] {
+       transform: rotateY(160deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="17"] {
+       transform: rotateY(170deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="18"] {
+       transform: rotateY(180deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="19"] {
+       transform: rotateY(190deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="20"] {
+       transform: rotateY(200deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="21"] {
+       transform: rotateY(210deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="22"] {
+       transform: rotateY(220deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="23"] {
+       -webkit-transform: rotateY(230deg) rotateZ(45deg) translateX(30px);
+       transform: rotateY(230deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="24"] {
+       transform: rotateY(240deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="25"] {
+       transform: rotateY(250deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="26"] {
+       transform: rotateY(260deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="27"] {
+       transform: rotateY(270deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="28"] {
+       transform: rotateY(280deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="29"] {
+       transform: rotateY(290deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="30"] {
+       transform: rotateY(300deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="31"] {
+       transform: rotateY(310deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="32"] {
+       transform: rotateY(320deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="33"] {
+       transform: rotateY(330deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="34"] {
+       transform: rotateY(340deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="35"] {
+       transform: rotateY(350deg) rotateZ(45deg) translateX(30px);
+      }
+      .heart3d [class$="36"] {
+       transform: rotateY(360deg) rotateZ(45deg) translateX(30px);
+      }
  
-<link rel="stylesheet" type="text/css" href="./style/style.css">
-<script type="text/javascript" src="./jquery/jquery.js"></script>
-<script type="text/javascript" src="./js/garden.js"></script>
-<script type="text/javascript" src="./js/functions.js"></script>
-<!--引入结束-->
- 
-<audio src="2019/04/20/music/致爱丽丝.mp3" autoplay="autoplay">
-您使用的浏览器不支持HTML5!
-</audio>
-</head>  
-<body oncontextmenu="return false" ondragstart="return false" style="zoom: 1;">
- 
-<!-- 代码开始 -->
-<div id="mainDiv">
-    <div id="content" style="width: 1110px; height: 625px; margin-top: 10px; margin-left: 119.5px;">
-        <div id="code" style="margin-top: 50px;">
-            <span class="comments">我害怕，</span><br>
-            我会永远是那孤独的根号三。<br>
-            <span class="comments">三本身是一个多么美妙的数字，</span><br>
-            我的这个三，<br>
-            <span class="comments">为何躲在那难看的根号下。</span><br>
-            我多么希望自己是一个九，<br>
-            <span class="comments">因为九只需要一点点小小的运算，</span><br>
-            便可摆脱这残酷的厄运。<br>
-            <span class="comments">我知道自己很难再看到我的太阳.</span><br>
-            就像这无休无止的 1.7321...<br>
-            <span class="comments">我不愿我的人生如此可悲。</span><br>
-            直到那一天，<br>
-            <span class="comments">我看到了，</span><br>
-            另一个根号三。<br>
-            <span class="comments">如此美丽无瑕，</span><br>
-            翩翩舞动而来，<br>
-            <span class="comments">我们彼此相乘，</span><br>
-            得到那梦寐以求的数字，<br>
-            <span class="comments">像整数一样圆满。</span><br>
-            我们砸碎命运的枷锁，<br>
-            <span class="comments">轻轻舞动爱情的魔杖。</span><br>
-            我们的平方根，已经解开。<br>
-            <span class="comments">我的爱，重获新生。</span><br>
-            我无法保证能给你童话般的世界，<br>
-             <span class="comments">也无法保证自己能在一夜之间长大。</span><br>
-            但是我保证，<br>
-            <span class="comments">你可以像公主一样永远生活在自由，幸福之中。</span><br>
-            <br>
-            I want to say:<br>
-             
-            <span class="keyword">for</span> (<span class="keyword">int</span> i=0;;i++)
-            <span class="keyword">printf</span>("<span class="comments">I Love You!</span>");<br>
-            <span class="keyword">爱你！</span>
-            </span></span></span></span></span></span></div>
-            <div id="loveHeart">
-            <div id="messages" style="display: block;">
-            <canvas id="garden"></canvas>
-             
-                <div id="words">
-                <div id="messages">
-                     
-                    <div id="elapseClock"></div>
-                </div>
-                <div id="loveu">
-                    爱你直到永永远远。<br/>
-                    <div class="signature">- 曹涛作</div>
-                </div>
- 
- 
-            <div id="words">
-            </div>
-            </div>   
-                 
-             
-        </div>
+      @keyframes spin {
+       to {
+        transform: rotateY(360deg) rotateX(360deg);
+       }
+      }
+      .per{
+        width:50px;height:50px;position:absolute;top:0;left:0;right:0;bottom:0;
+        margin:auto;transform-style:preserve-3d;perspective:800px;
+      }
+      
+      .img{width:50px;height:50px;position:absolute;backface-visibility:hidden;
+      }
+      .img:nth-child(1){top:-50px;left:0;transform-origin:bottom;
+      transform:translateZ(30px)rotateX(90deg);}
+      .img:nth-child(2){top:50px;left:0;transform-origin:top;
+      transform:translateZ(30px)rotateX(-90deg);}
+      .img:nth-child(3){top:0px;left:-50px;transform-origin:right;
+      transform:translateZ(30px)rotateY(-90deg);}
+      .img:nth-child(4){top:0px;left:50px;transform-origin:left;
+      transform:translateZ(30px)rotateY(90deg);}
+      .img:nth-child(6){top:0px;left:0;transform:translateZ(30px);}
+      .img:nth-child(5){top:0px;left:0;transform:translateZ(0px);}
+      
+    </style>
+  </head>
+  <body><!--身体-->
+    <divid="display">
     </div>
-</div>
-<!-- 代码结束 -->
-<script type="text/javascript">
-var offsetX = $("#loveHeart").width() / 2;
-var offsetY = $("#loveHeart").height() / 2 - 55;
-var together = new Date();
-together.setFullYear(2001, 1, 1);
-together.setHours(20);
-together.setMinutes(0);
-together.setSeconds(0);
-together.setMilliseconds(0);
- 
-if (!document.createElement('canvas').getContext) {
-    var msg = document.createElement("div");
-    msg.id = "errorMsg";
-    msg.innerHTML = "您使用的浏览器不支持HTML5!";
-    document.body.appendChild(msg);
-    $("#code").css("display", "none")
-    $("#copyright").css("position", "absolute");
-    $("#copyright").css("bottom", "10px");
-    document.execCommand("stop");
-} else {
-    setTimeout(function () {
-        startHeartAnimation();
-    }, 5000);
- 
-    timeElapse(together);
-    setInterval(function () {
-        timeElapse(together);
-    }, 500);
- 
-    adjustCodePosition();
-    $("#code").typewriter();
-}
- 
-</script>
- 
- 
-</body></html>
+    <divclass='heart3d'>
+      <divclass='rib1'></div>
+      <divclass='rib2'></div>
+      <divclass='rib3'></div>
+      <divclass='rib4'></div>
+      <divclass='rib5'></div>
+      <divclass='rib6'></div>
+      <divclass='rib7'></div>
+      <divclass='rib8'></div>
+      <divclass='rib9'></div>
+      <divclass='rib10'></div>
+      <divclass='rib11'></div>
+      <divclass='rib12'></div>
+      <divclass='rib13'></div>
+      <divclass='rib14'></div>
+      <divclass='rib15'></div>
+      <divclass='rib16'></div>
+      <divclass='rib17'></div>
+      <divclass='rib18'></div>
+      <divclass='rib19'></div>
+      <divclass='rib20'></div>
+      <divclass='rib21'></div>
+      <divclass='rib22'></div>
+      <divclass='rib23'></div>
+      <divclass='rib24'></div>
+      <divclass='rib25'></div>
+      <divclass='rib26'></div>
+      <divclass='rib27'></div>
+      <divclass='rib28'></div>
+      <divclass='rib29'></div>
+      <divclass='rib30'></div>
+      <divclass='rib31'></div>
+      <divclass='rib32'></div>
+      <divclass='rib33'></div>
+      <divclass='rib34'></div>
+      <divclass='rib35'></div>
+      <divclass='rib36'></div>
+      <divclass="per">
+        <divclass="img"><imgwidth="50" height="50" src="images/1.jpg" /></div>
+        <divclass="img"><imgwidth="50" height="50" src="images/2.jpg" /></div>
+        <divclass="img"><imgwidth="50" height="50" src="images/3.jpg" /></div>
+        <divclass="img"><imgwidth="50" height="50" src="images/4.jpg" /></div>
+        <divclass="img"><imgwidth="50" height="50" src="images/5.jpg" /></div>
+        <divclass="img"><imgwidth="50" height="50" src="images/6.jpg" /></div>
+      </div>
+    </div>
+    
+    <script>
+      
+      var i =0;
+      var str1 ="对于一个程序员来说，对HTML语言一定不会感到陌生，因为HTML语言是所有网页制作的基础。但是如果页面能够方便网友们的使用，友好而大方，甚至像桌面应用程序一样，那么仅仅依靠HTML语言是不够的，JavaScript在这其中扮演着重要的角色。";
+      var str ="如果，爱一个人，守一份爱情，可以在早春一起去踏青，可以在盛夏一起去赏荷，可以在浅秋一起去观月，可以在深冬一起去寻梅，不厌倦，却欢乐，不平凡，却平淡。那么，此生便无憾了。";
+      window.onload =function typing(){
+        var mydiv =document.getElementById("display");
+        mydiv.innerHTML +=str.charAt(i);
+        var oBtn =document.getElementById('btn');
+        i++;
+        var id =setTimeout(typing,100);
+        if(i==str.length){
+          clearTimeout(id);
+          mydiv.value ="";
+          mydiv.innerHTML +=""
+          //alert("程序执行完毕！");
+        }
+        
+        
+      }
+    </script>
+    
+  </body>
+</html>
