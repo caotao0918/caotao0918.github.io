@@ -23,6 +23,7 @@ github_username:  caotao0918
 
 # Build settings
 markdown: kramdown
+html: html5
 theme: minima
 gems:
   - jekyll-feed
